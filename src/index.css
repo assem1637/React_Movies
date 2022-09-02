@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+
+:root {
+    --bg-color: #131722;
+}
+
+body {
+    font-family: 'Cairo', sans-serif !important;
+    background-color: var(--bg-color) !important;
+}
+
+.Logout {
+    cursor: pointer;
+}
+
+.brdr {
+    height: 1px;
+    background-color: #a8a8a83d;
+}
+
+li {
+    cursor: pointer;
+}
+
+
+a , a:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.p-details {
+    font-size: large;
+}
+
+.parent-hover , .NotFound {
+    overflow: hidden !important;
+}
+
+.hover , .hover-home {
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.parent-hover:hover > .hover , .parent-hover:hover > .hover-home{
+    transform: scale(1);
+}
+
+@media screen and (max-width: 992px) {
+
+    .img-datails {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .img-datails > img {
+        width: 65% !important;
+    }
+
+    .myAccount {
+        width: 80% !important;
+        margin: 10% !important;
+    }
+
+    .hover-home {
+        font-size: 15px !important;
+    }
+
+}
